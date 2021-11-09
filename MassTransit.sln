@@ -102,7 +102,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MassTransit.WebJobs.EventHu
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Monitoring", "Monitoring", "{DE40BDEC-6277-4E14-8EB6-D0B6863571BC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MassTransit.Azure.Storage", "src\Persistence\MassTransit.Azure.Storage\MassTransit.Azure.Storage.csproj", "{C81070F9-908B-4A76-A96F-CFD4F67A93AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MassTransit.Azure.Storage", "src\Persistence\MassTransit.Azure.Storage\MassTransit.Azure.Storage.csproj", "{69421DBF-20F8-447C-A361-74B57BB40E17}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MassTransit.AWS.S3", "src\Persistence\MassTransit.AWS.S3\MassTransit.AWS.S3.csproj", "{C81070F9-908B-4A76-A96F-CFD4F67A93AB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Analyzers", "Analyzers", "{393B7B0C-52F4-41E8-A9E9-EE867A0E6448}"
 EndProject
@@ -132,17 +134,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MassTransit.EventHubIntegra
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MassTransit.EventHubIntegration.Tests", "tests\MassTransit.EventHubIntegration.Tests\MassTransit.EventHubIntegration.Tests.csproj", "{24CC1B47-AE01-4871-A939-2BF6EB789860}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MassTransit.Azure.Table", "src\Persistence\MassTransit.Azure.Table\MassTransit.Azure.Table.csproj", "{338E2B7E-4301-4547-9172-4415F739C029}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MassTransit.Azure.Table", "src\Persistence\MassTransit.Azure.Table\MassTransit.Azure.Table.csproj", "{338E2B7E-4301-4547-9172-4415F739C029}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MassTransit.Azure.Table.Tests", "tests\MassTransit.Azure.Table.Tests\MassTransit.Azure.Table.Tests.csproj", "{17E04A9B-5DB5-4857-99CD-E9AF22DA00E4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MassTransit.Azure.Table.Tests", "tests\MassTransit.Azure.Table.Tests\MassTransit.Azure.Table.Tests.csproj", "{17E04A9B-5DB5-4857-99CD-E9AF22DA00E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MassTransit.GrpcTransport", "src\Transports\MassTransit.GrpcTransport\MassTransit.GrpcTransport.csproj", "{AF56509B-0B95-4ACE-9CFC-F9A79756C357}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MassTransit.GrpcTransport", "src\Transports\MassTransit.GrpcTransport\MassTransit.GrpcTransport.csproj", "{AF56509B-0B95-4ACE-9CFC-F9A79756C357}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MassTransit.GrpcTransport.Tests", "tests\MassTransit.GrpcTransport.Tests\MassTransit.GrpcTransport.Tests.csproj", "{082488F6-6322-462A-85D7-9E893A67B8CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MassTransit.GrpcTransport.Tests", "tests\MassTransit.GrpcTransport.Tests\MassTransit.GrpcTransport.Tests.csproj", "{082488F6-6322-462A-85D7-9E893A67B8CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MassTransit.TestComponents", "tests\MassTransit.TestComponents\MassTransit.TestComponents.csproj", "{27DF8220-6885-4E08-89CB-EE56582702D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MassTransit.TestComponents", "tests\MassTransit.TestComponents\MassTransit.TestComponents.csproj", "{27DF8220-6885-4E08-89CB-EE56582702D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MassTransit.Transports.Tests", "tests\MassTransit.Transports.Tests\MassTransit.Transports.Tests.csproj", "{7632EDAF-29A1-4E69-952F-C75D3BF34B3B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MassTransit.Transports.Tests", "tests\MassTransit.Transports.Tests\MassTransit.Transports.Tests.csproj", "{7632EDAF-29A1-4E69-952F-C75D3BF34B3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MassTransit.AWS.S3.Tests", "tests\MassTransit.AWS.S3.Tests\MassTransit.AWS.S3.Tests.csproj", "{4C8A852F-8401-44A1-9824-FE5EE3510700}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -579,6 +583,18 @@ Global
 		{56E9DB90-C063-49CA-BAF7-FFCFE963E44C}.ReleaseUnsigned|Any CPU.Build.0 = Release|Any CPU
 		{56E9DB90-C063-49CA-BAF7-FFCFE963E44C}.ReleaseUnsigned|x86.ActiveCfg = Release|Any CPU
 		{56E9DB90-C063-49CA-BAF7-FFCFE963E44C}.ReleaseUnsigned|x86.Build.0 = Release|Any CPU
+		{69421DBF-20F8-447C-A361-74B57BB40E17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69421DBF-20F8-447C-A361-74B57BB40E17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69421DBF-20F8-447C-A361-74B57BB40E17}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{69421DBF-20F8-447C-A361-74B57BB40E17}.Debug|x86.Build.0 = Debug|Any CPU
+		{69421DBF-20F8-447C-A361-74B57BB40E17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69421DBF-20F8-447C-A361-74B57BB40E17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69421DBF-20F8-447C-A361-74B57BB40E17}.Release|x86.ActiveCfg = Release|Any CPU
+		{69421DBF-20F8-447C-A361-74B57BB40E17}.Release|x86.Build.0 = Release|Any CPU
+		{69421DBF-20F8-447C-A361-74B57BB40E17}.ReleaseUnsigned|Any CPU.ActiveCfg = Release|Any CPU
+		{69421DBF-20F8-447C-A361-74B57BB40E17}.ReleaseUnsigned|Any CPU.Build.0 = Release|Any CPU
+		{69421DBF-20F8-447C-A361-74B57BB40E17}.ReleaseUnsigned|x86.ActiveCfg = Release|Any CPU
+		{69421DBF-20F8-447C-A361-74B57BB40E17}.ReleaseUnsigned|x86.Build.0 = Release|Any CPU
 		{C81070F9-908B-4A76-A96F-CFD4F67A93AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C81070F9-908B-4A76-A96F-CFD4F67A93AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C81070F9-908B-4A76-A96F-CFD4F67A93AB}.Debug|x86.ActiveCfg = Debug|Any CPU
@@ -795,6 +811,18 @@ Global
 		{7632EDAF-29A1-4E69-952F-C75D3BF34B3B}.ReleaseUnsigned|Any CPU.Build.0 = Debug|Any CPU
 		{7632EDAF-29A1-4E69-952F-C75D3BF34B3B}.ReleaseUnsigned|x86.ActiveCfg = Debug|Any CPU
 		{7632EDAF-29A1-4E69-952F-C75D3BF34B3B}.ReleaseUnsigned|x86.Build.0 = Debug|Any CPU
+		{4C8A852F-8401-44A1-9824-FE5EE3510700}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C8A852F-8401-44A1-9824-FE5EE3510700}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C8A852F-8401-44A1-9824-FE5EE3510700}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4C8A852F-8401-44A1-9824-FE5EE3510700}.Debug|x86.Build.0 = Debug|Any CPU
+		{4C8A852F-8401-44A1-9824-FE5EE3510700}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C8A852F-8401-44A1-9824-FE5EE3510700}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C8A852F-8401-44A1-9824-FE5EE3510700}.Release|x86.ActiveCfg = Release|Any CPU
+		{4C8A852F-8401-44A1-9824-FE5EE3510700}.Release|x86.Build.0 = Release|Any CPU
+		{4C8A852F-8401-44A1-9824-FE5EE3510700}.ReleaseUnsigned|Any CPU.ActiveCfg = Release|Any CPU
+		{4C8A852F-8401-44A1-9824-FE5EE3510700}.ReleaseUnsigned|Any CPU.Build.0 = Release|Any CPU
+		{4C8A852F-8401-44A1-9824-FE5EE3510700}.ReleaseUnsigned|x86.ActiveCfg = Release|Any CPU
+		{4C8A852F-8401-44A1-9824-FE5EE3510700}.ReleaseUnsigned|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -837,6 +865,7 @@ Global
 		{BCEC7EAA-7E8F-4146-977D-346869F3BA34} = {50867E77-BDA5-43B9-AC92-81CEDB338B83}
 		{4A454D43-616F-40A2-ACCD-6BC82CE14340} = {50867E77-BDA5-43B9-AC92-81CEDB338B83}
 		{56E9DB90-C063-49CA-BAF7-FFCFE963E44C} = {0006D6BB-1382-4B32-AD32-CA037F5CD4F6}
+		{69421DBF-20F8-447C-A361-74B57BB40E17} = {56F516D7-BC3C-49E1-A639-83C5F14953F8}
 		{C81070F9-908B-4A76-A96F-CFD4F67A93AB} = {56F516D7-BC3C-49E1-A639-83C5F14953F8}
 		{3DD99432-4505-4FA6-BD0D-A599733E2168} = {393B7B0C-52F4-41E8-A9E9-EE867A0E6448}
 		{1F71C6D2-17AE-4C7B-878D-BB7B295D3B3D} = {393B7B0C-52F4-41E8-A9E9-EE867A0E6448}
@@ -855,6 +884,7 @@ Global
 		{AF56509B-0B95-4ACE-9CFC-F9A79756C357} = {0006D6BB-1382-4B32-AD32-CA037F5CD4F6}
 		{082488F6-6322-462A-85D7-9E893A67B8CD} = {0006D6BB-1382-4B32-AD32-CA037F5CD4F6}
 		{7632EDAF-29A1-4E69-952F-C75D3BF34B3B} = {0006D6BB-1382-4B32-AD32-CA037F5CD4F6}
+		{4C8A852F-8401-44A1-9824-FE5EE3510700} = {56F516D7-BC3C-49E1-A639-83C5F14953F8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {43D3A7D5-0945-435E-8D03-1E631E5CDBA8}
